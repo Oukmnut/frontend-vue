@@ -1,18 +1,14 @@
 import { fileURLToPath, URL } from 'node:url'
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
-import vueDevTools from 'vite-plugin-vue-devtools'
 
-// https://vite.dev/config/
+// https://vitejs.dev/config/
 export default defineConfig({
-  base: './', // 👈 THIS LINE FIXES ASSET LOADING IN DIST
-  plugins: [
-    vue(),
-    vueDevTools(),
-  ],
+  base: './', // required for proper asset loading on Vercel
+  plugins: [vue()],
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
-    },
-  },
+    }
+  }
 })

@@ -1,21 +1,17 @@
 {
-  "name": "frontend",
-  "version": "0.0.0",
-  "private": true,
-  "type": "module",
-"scripts": {
-  "dev": "vite",
-  "build": "vite build",
-  "preview": "vite preview"
-}
-,
+  "name": "vue-crud",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
   "dependencies": {
-    "bootstrap": "^5.3.6",
-    "vue": "^3.5.13"
+    "vue": "^3.x"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "^5.2.3",
-    "vite": "^6.2.4",
-    "vite-plugin-vue-devtools": "^7.7.2"
+    "@vitejs/plugin-vue": "^5.2.4",
+    "vite": "^5.4.19",
+    "vite-plugin-vue-devtools": "^7.7.6"
   }
 }
